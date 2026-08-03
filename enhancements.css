@@ -1,0 +1,74 @@
+/* Ajustes puntuales para el contenido ampliado y los recursos descargables. */
+.header-actions { display: flex; align-items: center; gap: 10px; }
+.language-toggle { min-width: 38px; padding: 8px 10px; border: 1px solid var(--border); border-radius: 99px; background: transparent; color: var(--teal); font: 600 12px var(--sans); letter-spacing: .08em; cursor: pointer; transition: border-color .2s, color .2s, background .2s; }
+.language-toggle:hover { border-color: var(--coral); background: var(--cream); color: var(--coral); }
+.about .about-lead {
+  color: var(--teal);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.about .body-copy blockquote {
+  margin: 28px 0;
+  padding: 18px 0 18px 22px;
+  border-left: 2px solid var(--coral);
+  color: var(--teal);
+  font: 400 23px/1.4 var(--serif);
+}
+
+.about .about-subtitle {
+  margin: 31px 0 10px;
+  color: var(--gold);
+  font: 600 11px/1.4 var(--sans);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.about .credentials-list {
+  margin: 0 0 18px;
+  padding-left: 18px;
+  font-size: 15px;
+}
+
+.about .credentials-list li { margin-bottom: 5px; padding-left: 3px; }
+.about .about-closing { color: var(--teal); font-weight: 600; }
+
+.resources { background: #fff; }
+.section-intro > p:not(.eyebrow) { margin: 13px 0 0; }
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  padding: 30px 27px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 17px;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.resource-card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(44,74,74,.08); }
+.resource-type { margin-bottom: 19px; color: var(--gold); font-size: 11px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
+.resource-card h3 { margin-bottom: 13px; color: var(--teal); font: 500 20px/1.27 var(--serif); }
+.resource-card p:not(.resource-type) { margin-bottom: 25px; font-size: 14px; line-height: 1.65; }
+.resource-button { align-self: flex-start; margin-top: auto; padding: 11px 17px; font-size: 13px; }
+
+@media (max-width: 900px) {
+  .resource-grid { grid-template-columns: 1fr; }
+  .resource-card { min-height: 230px; }
+}
+
+@media (max-width: 680px) {
+  .header-actions { margin-left: auto; }
+  .header-actions .header-cta { display: none; }
+  .language-toggle { min-width: 36px; }
+  .about .body-copy blockquote { font-size: 21px; }
+}
