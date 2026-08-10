@@ -61,6 +61,11 @@
             <p data-i18n="aboutP3">Una trayectoria que une rigor contable con mirada de negocio. Especial atención a los negocios de turismo, sus temporadas y su ritmo propio.</p>
             <h3 class="about-subtitle" data-i18n="approachTitle">Mi forma de acompañar</h3>
             <p class="about-closing" data-i18n="approach">Simplicidad con rigor. Lo importante, explicado con claridad.</p>
+            <div class="about-actions" style="margin-top: 24px;">
+              <a class="button button-outline" href="trayectoria.html">
+                <span data-i18n="viewTrajectory">Conocé mi trayectoria profesional completa</span> <span>→</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -79,11 +84,70 @@
       </section>
 
       <section class="resources section" id="recursos" aria-labelledby="resources-title">
-        <div class="section-intro"><p class="eyebrow" data-i18n="resourcesEyebrow">Recursos gratuitos</p><h2 id="resources-title" data-i18n="resourcesTitle">Recursos para ordenar tus finanzas</h2><p data-i18n="resourcesDescription">Herramientas prácticas que podés descargar y empezar a usar hoy.</p></div>
-        <div class="resource-grid">
-          <article class="resource-card"><p class="resource-type" data-i18n="resource1Type">Guía práctica · PDF</p><h3 data-i18n="resource1Title">Ebook: Dos Cajas, Un Negocio</h3><p data-i18n="resource1Text">La guía definitiva para separar tus finanzas personales de las de tu negocio y finalmente entender tus impuestos.</p><a class="button resource-button" href="Ebook%20de%20Educacion%20Financiera.pdf" download><span data-i18n="downloadEbook">Descargar ebook</span> <span>→</span></a></article>
-          <article class="resource-card"><p class="resource-type" data-i18n="resource2Type">Para empezar · PDF</p><h3 data-i18n="resource2Title">Checklist: 7 Acciones para Empezar Esta Semana</h3><p data-i18n="resource2Text">Acciones concretas para ordenar tus finanzas esta misma semana.</p><a class="button resource-button" href="Checklist%20Final.pdf" download><span data-i18n="downloadChecklist">Descargar checklist</span> <span>→</span></a></article>
-          <article class="resource-card"><p class="resource-type" data-i18n="resource3Type">Herramienta editable · Excel</p><h3 data-i18n="resource3Title">Planilla de Finanzas</h3><p data-i18n="resource3Text">Planilla lista para usar: ingresos, gastos, impuestos y resumen mensual.</p><a class="button resource-button" href="Planilla%20de%20Finanzas.xlsx" download><span data-i18n="downloadSpreadsheet">Descargar planilla</span> <span>→</span></a></article>
+        <div class="section-intro">
+          <p class="eyebrow" data-i18n="resourcesEyebrow">Recursos gratuitos</p>
+          <h2 id="resources-title" data-i18n="resourcesTitle">Accedé a nuestros recursos y novedades</h2>
+          <p data-i18n="resourcesDescription">Completá el formulario para descargar la guía, checklist y planilla de finanzas, y mantenerte al tanto de las próximas charlas de Marisa.</p>
+        </div>
+
+        <div class="resources-lead-container">
+          <form class="lead-form" id="lead-capture-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="lead-name" data-i18n="formName">Nombre *</label>
+                <input type="text" id="lead-name" name="name" required placeholder="Tu nombre" autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="lead-lastname" data-i18n="formLastName">Apellido *</label>
+                <input type="text" id="lead-lastname" name="lastname" required placeholder="Tu apellido" autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lead-email" data-i18n="formEmail">Correo electrónico *</label>
+              <input type="email" id="lead-email" name="email" required placeholder="tuemail@ejemplo.com" autocomplete="email" />
+            </div>
+            <div class="form-group checkbox-group">
+              <label class="custom-checkbox">
+                <input type="checkbox" id="lead-subscribe" name="subscribe" checked />
+                <span data-i18n="formSubscribeText">Quiero suscribirme a novedades, consejos financieros y futuras charlas de Marisa Mancuello.</span>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="button button-large lead-submit-btn">
+                <span data-i18n="formSubmit">Acceder a los recursos gratuitos</span> <span>→</span>
+              </button>
+            </div>
+          </form>
+
+          <div class="resources-unlocked" id="resources-unlocked-grid" style="display: none;">
+            <div class="unlocked-message">
+              <p class="success-badge">✅ <span data-i18n="formSuccessTitle">¡Acceso concedido!</span></p>
+              <p><span data-i18n="formSuccessText">Gracias por registrarte. Ya podés descargar todos los recursos gratuitos a continuación:</span></p>
+            </div>
+            <div class="resource-grid">
+              <article class="resource-card">
+                <p class="resource-type" data-i18n="resource1Type">Guía práctica · PDF</p>
+                <h3 data-i18n="resource1Title">Ebook: Dos Cajas, Un Negocio</h3>
+                <p data-i18n="resource1Text">La guía definitiva para separar tus finanzas personales de las de tu negocio y finalmente entender tus impuestos.</p>
+                <a class="button resource-button" href="Ebook%20de%20Educacion%20Financiera.pdf" download><span data-i18n="downloadEbook">Descargar ebook</span> <span>→</span></a>
+              </article>
+              <article class="resource-card">
+                <p class="resource-type" data-i18n="resource2Type">Para empezar · PDF</p>
+                <h3 data-i18n="resource2Title">Checklist: 7 Acciones para Empezar Esta Semana</h3>
+                <p data-i18n="resource2Text">Acciones concretas para ordenar tus finanzas esta misma semana.</p>
+                <a class="button resource-button" href="Checklist%20Final.pdf" download><span data-i18n="downloadChecklist">Descargar checklist</span> <span>→</span></a>
+              </article>
+              <article class="resource-card">
+                <p class="resource-type" data-i18n="resource3Type">Herramienta editable · Excel</p>
+                <h3 data-i18n="resource3Title">Planilla de Finanzas</h3>
+                <p data-i18n="resource3Text">Planilla lista para usar: ingresos, gastos, impuestos y resumen mensual.</p>
+                <a class="button resource-button" href="Planilla%20de%20Finanzas.xlsx" download><span data-i18n="downloadSpreadsheet">Descargar planilla</span> <span>→</span></a>
+              </article>
+            </div>
+            <div class="reset-lead-wrap">
+              <button type="button" class="text-link" id="lead-reset-btn" data-i18n="formReset">¿Registrar otro correo o modificar datos?</button>
+            </div>
+          </div>
         </div>
       </section>
 
