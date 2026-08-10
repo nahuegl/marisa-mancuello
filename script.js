@@ -32,15 +32,23 @@ const translations = {
     service2Title: 'Gestión impositiva y contable mensual', service2Text: 'IVA, IIBB, retenciones, presentaciones ante ARCA, AGIP y ARBA, e información fiscal preparada a tiempo.',
     service3Title: 'Liquidación de sueldos y cargas sociales', service3Text: 'Liquidaciones mensuales, SAC, vacaciones, altas y bajas, con una gestión ordenada de sindicatos y cargas sociales.',
     service4Title: 'Reportes, balances y acompañamiento continuo', service4Text: 'Balances, reportes financieros y control operativo de clientes y proveedores para empresas que necesitan mirada de negocio.',
-    resourcesEyebrow: 'Recursos gratuitos', resourcesTitle: 'Accedé a nuestros recursos y novedades', resourcesDescription: 'Completá el formulario para descargar la guía, checklist y planilla de finanzas, y mantenerte al tanto de las próximas charlas de Marisa.',
+    resourcesEyebrow: 'Recursos gratuitos', resourcesTitle: 'Accedé a nuestros recursos y novedades', resourcesDescription: 'Completá tus datos para recibir la guía, checklist y planilla de finanzas directamente en tu correo electrónico.',
     resource1Type: 'Guía práctica · PDF', resource1Title: 'Ebook: Dos Cajas, Un Negocio', resource1Text: 'La guía definitiva para separar tus finanzas personales de las de tu negocio y finalmente entender tus impuestos.', downloadEbook: 'Descargar ebook',
     resource2Type: 'Para empezar · PDF', resource2Title: 'Checklist: 7 Acciones para Empezar Esta Semana', resource2Text: 'Acciones concretas para ordenar tus finanzas esta misma semana.', downloadChecklist: 'Descargar checklist',
     resource3Type: 'Herramienta editable · Excel', resource3Title: 'Planilla de Finanzas', resource3Text: 'Planilla lista para usar: ingresos, gastos, impuestos y resumen mensual.', downloadSpreadsheet: 'Descargar planilla',
     formName: 'Nombre *', formLastName: 'Apellido *', formEmail: 'Correo electrónico *',
     formSubscribeText: 'Quiero suscribirme a novedades, consejos financieros y futuras charlas de Marisa Mancuello.',
-    formSubmit: 'Acceder a los recursos gratuitos', formSuccessTitle: '¡Acceso concedido!',
-    formSuccessText: 'Gracias por registrarte. Ya podés descargar todos los recursos gratuitos a continuación:',
-    formReset: '¿Registrar otro correo o modificar datos?',
+    formContinue: 'Continuar y verificar datos', confirmTitle: 'Confirmá tus datos antes de enviar',
+    confirmSub: 'Enviaremos los 3 recursos gratuitos (Ebook, Checklist y Planilla) a la siguiente casilla:',
+    summaryName: 'Nombre y Apellido:', summaryEmail: 'Correo electrónico:', summarySub: 'Suscripción a novedades:',
+    confirmSend: 'Confirmar y recibir recursos por correo', confirmEdit: 'Corregir datos',
+    emailSentTitle: '¡Recursos enviados a tu correo!',
+    emailSentText: 'Hemos enviado la guía, la checklist y la planilla de finanzas a',
+    emailPreviewTag: 'Mensaje de bienvenida', welcomeGreeting: '¡Hola', welcomeSubGreeting: '! Te damos la bienvenida.',
+    emailWelcomeP1: 'En tu casilla encontrás adjuntos los enlaces directos para descargar:',
+    emailWelcomeQuote: '“Mi objetivo es que sientas calma y claridad al tomar decisiones financieras en tu negocio.”',
+    emailWelcomeP2: 'Revisá tu bandeja de entrada (y la carpeta de Spam o Promociones por las dudas). Si tenés cualquier consulta sobre tus números o querés agendar una llamada sin compromiso, podés responder directamente a ese correo o escribirnos.',
+    formReset: 'Modificar datos o registrar otro correo',
     contactEyebrow: 'Empecemos', contactTitle: 'Cuando estés listo/a, empecemos por una conversación.', contactDescription: '30 minutos sin compromiso. Revisamos tu situación y vemos cómo puedo ayudarte de forma concreta.',
     footerRole: 'Contadora Pública | Especialista en Finanzas', footerCredential: 'Matrícula Tomo 463 · Folio 69', footerText: 'Finanzas claras para emprendedores y empresas que quieren crecer con orden.',
     // Trajectory i18n
@@ -81,15 +89,23 @@ const translations = {
     service2Title: 'Monthly tax and accounting management', service2Text: 'VAT, turnover tax, withholdings, filings with ARCA, AGIP, and ARBA, plus timely preparation of tax information.',
     service3Title: 'Payroll and social security', service3Text: 'Monthly payroll, bonuses, vacations, hires and terminations, with organized union and social-security management.',
     service4Title: 'Reports, financial statements, and ongoing support', service4Text: 'Financial statements, reports, and customer and supplier controls for businesses that need a true business perspective.',
-    resourcesEyebrow: 'Free resources', resourcesTitle: 'Access our resources & updates', resourcesDescription: 'Complete the form to download the guide, checklist, and spreadsheet, and stay informed about Marisa’s upcoming talks.',
+    resourcesEyebrow: 'Free resources', resourcesTitle: 'Access our resources & updates', resourcesDescription: 'Complete your details to receive the guide, checklist, and finance spreadsheet directly in your email.',
     resource1Type: 'Practical guide · PDF', resource1Title: 'Ebook: Two Accounts, One Business', resource1Text: 'The definitive guide to separating your personal finances from your business and finally understanding your taxes.', downloadEbook: 'Download ebook',
     resource2Type: 'Getting started · PDF', resource2Title: 'Checklist: 7 Actions to Start This Week', resource2Text: 'Concrete actions to organize your finances this very week.', downloadChecklist: 'Download checklist',
     resource3Type: 'Editable tool · Excel', resource3Title: 'Finance Spreadsheet', resource3Text: 'A ready-to-use spreadsheet for income, expenses, taxes, and a monthly summary.', downloadSpreadsheet: 'Download spreadsheet',
     formName: 'First Name *', formLastName: 'Last Name *', formEmail: 'Email Address *',
     formSubscribeText: 'I want to subscribe to news, financial tips, and future talks by Marisa Mancuello.',
-    formSubmit: 'Access free resources', formSuccessTitle: 'Access Granted!',
-    formSuccessText: 'Thank you for registering. You can download all free resources below:',
-    formReset: 'Register another email or modify info?',
+    formContinue: 'Continue & verify details', confirmTitle: 'Confirm your details before sending',
+    confirmSub: 'We will send all 3 free resources (Ebook, Checklist & Spreadsheet) to the following email address:',
+    summaryName: 'Full Name:', summaryEmail: 'Email Address:', summarySub: 'Newsletter Subscription:',
+    confirmSend: 'Confirm & receive resources by email', confirmEdit: 'Edit details',
+    emailSentTitle: 'Resources sent to your email!',
+    emailSentText: 'We have sent the guide, checklist, and finance spreadsheet to',
+    emailPreviewTag: 'Welcome Message', welcomeGreeting: 'Hello', welcomeSubGreeting: '! Welcome.',
+    emailWelcomeP1: 'In your inbox you will find direct links to download:',
+    emailWelcomeQuote: '“My goal is for you to feel calm and clarity when making financial decisions in your business.”',
+    emailWelcomeP2: 'Check your inbox (and spam/promotions folder just in case). If you have any questions about your numbers or want to book a call, feel free to reply directly to that email or write to us.',
+    formReset: 'Modify details or register another email',
     contactEyebrow: 'Let’s start', contactTitle: 'When you’re ready, let’s start with a conversation.', contactDescription: '30 minutes, no obligation. We’ll review your situation and see how I can help in a practical way.',
     footerRole: 'Certified Public Accountant | Finance Specialist', footerCredential: 'Registration Volume 463 · Page 69', footerText: 'Clear finances for entrepreneurs and businesses ready to grow with structure.',
     // Trajectory i18n
@@ -136,18 +152,40 @@ languageToggle?.addEventListener('click', () => {
   setLanguage(document.documentElement.lang.startsWith('es') ? 'en' : 'es');
 });
 
-// Lead Capture Form Handler
+// Multi-step Lead Capture Form Handler
 const leadForm = document.getElementById('lead-capture-form');
-const unlockedGrid = document.getElementById('resources-unlocked-grid');
+const confirmStep = document.getElementById('lead-confirmation-step');
+const successStep = document.getElementById('lead-success-step');
+
+const confirmSubmitBtn = document.getElementById('confirm-submit-btn');
+const confirmEditBtn = document.getElementById('confirm-edit-btn');
 const resetBtn = document.getElementById('lead-reset-btn');
 
-if (leadForm && unlockedGrid) {
+if (leadForm && confirmStep && successStep) {
+  let tempLeadData = null;
+
+  const renderSuccessState = (data) => {
+    const userEmailEl = document.getElementById('success-user-email');
+    const userNameEl = document.getElementById('welcome-user-name');
+    if (userEmailEl) userEmailEl.textContent = data.email;
+    if (userNameEl) userNameEl.textContent = data.name;
+
+    leadForm.style.display = 'none';
+    confirmStep.style.display = 'none';
+    successStep.style.display = 'block';
+  };
+
   const savedLead = localStorage.getItem('marisa_lead_info');
   if (savedLead) {
-    leadForm.style.display = 'none';
-    unlockedGrid.style.display = 'block';
+    try {
+      const parsed = JSON.parse(savedLead);
+      renderSuccessState(parsed);
+    } catch (err) {
+      console.error(err);
+    }
   }
 
+  // Paso 1: Enviar formulario -> Mostrar tarjeta de verificación
   leadForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const nameInput = document.getElementById('lead-name');
@@ -160,7 +198,7 @@ if (leadForm && unlockedGrid) {
       return;
     }
 
-    const leadData = {
+    tempLeadData = {
       name: nameInput.value.trim(),
       lastname: lastNameInput.value.trim(),
       email: emailInput.value.trim(),
@@ -168,15 +206,40 @@ if (leadForm && unlockedGrid) {
       timestamp: new Date().toISOString()
     };
 
-    localStorage.setItem('marisa_lead_info', JSON.stringify(leadData));
+    // Actualizar datos de verificación
+    const fullNameEl = document.getElementById('confirm-full-name');
+    const emailAddrEl = document.getElementById('confirm-email-addr');
+    const subStatusEl = document.getElementById('confirm-sub-status');
+    const isEs = document.documentElement.lang.startsWith('es');
+
+    if (fullNameEl) fullNameEl.textContent = `${tempLeadData.name} ${tempLeadData.lastname}`;
+    if (emailAddrEl) emailAddrEl.textContent = tempLeadData.email;
+    if (subStatusEl) subStatusEl.textContent = tempLeadData.subscribe ? (isEs ? 'Sí, activada' : 'Yes, subscribed') : (isEs ? 'No' : 'No');
+
     leadForm.style.display = 'none';
-    unlockedGrid.style.display = 'block';
+    confirmStep.style.display = 'block';
   });
 
+  // Paso 2 -> Editar datos: regresar al formulario
+  confirmEditBtn?.addEventListener('click', () => {
+    confirmStep.style.display = 'none';
+    leadForm.style.display = 'block';
+  });
+
+  // Paso 2 -> Confirmar envío: guardar y mostrar confirmación de entrega por email
+  confirmSubmitBtn?.addEventListener('click', () => {
+    if (tempLeadData) {
+      localStorage.setItem('marisa_lead_info', JSON.stringify(tempLeadData));
+      renderSuccessState(tempLeadData);
+    }
+  });
+
+  // Modificar datos o registrar otro correo
   resetBtn?.addEventListener('click', () => {
     localStorage.removeItem('marisa_lead_info');
     leadForm.reset();
-    unlockedGrid.style.display = 'none';
+    successStep.style.display = 'none';
+    confirmStep.style.display = 'none';
     leadForm.style.display = 'block';
   });
 }

@@ -87,10 +87,11 @@
         <div class="section-intro">
           <p class="eyebrow" data-i18n="resourcesEyebrow">Recursos gratuitos</p>
           <h2 id="resources-title" data-i18n="resourcesTitle">Accedé a nuestros recursos y novedades</h2>
-          <p data-i18n="resourcesDescription">Completá el formulario para descargar la guía, checklist y planilla de finanzas, y mantenerte al tanto de las próximas charlas de Marisa.</p>
+          <p data-i18n="resourcesDescription">Completá tus datos para recibir la guía, checklist y planilla de finanzas directamente en tu correo electrónico.</p>
         </div>
 
         <div class="resources-lead-container">
+          <!-- Paso 1: Formulario de Registro -->
           <form class="lead-form" id="lead-capture-form" novalidate>
             <div class="form-row">
               <div class="form-group">
@@ -114,38 +115,76 @@
             </div>
             <div class="form-actions">
               <button type="submit" class="button button-large lead-submit-btn">
-                <span data-i18n="formSubmit">Acceder a los recursos gratuitos</span> <span>→</span>
+                <span data-i18n="formContinue">Continuar y verificar datos</span> <span>→</span>
               </button>
             </div>
           </form>
 
-          <div class="resources-unlocked" id="resources-unlocked-grid" style="display: none;">
+          <!-- Paso 2: Verificación previa al envío -->
+          <div class="lead-confirmation-card" id="lead-confirmation-step" style="display: none;">
+            <h3 data-i18n="confirmTitle">Confirmá tus datos antes de enviar</h3>
+            <p class="confirmSub" data-i18n="confirmSub">Enviaremos los 3 recursos gratuitos (Ebook, Checklist y Planilla) a la siguiente casilla:</p>
+            
+            <div class="summary-box">
+              <div class="summary-item">
+                <span class="summary-label" data-i18n="summaryName">Nombre y Apellido:</span>
+                <strong id="confirm-full-name">--</strong>
+              </div>
+              <div class="summary-item">
+                <span class="summary-label" data-i18n="summaryEmail">Correo electrónico:</span>
+                <strong id="confirm-email-addr">--</strong>
+              </div>
+              <div class="summary-item">
+                <span class="summary-label" data-i18n="summarySub">Suscripción a novedades:</span>
+                <strong id="confirm-sub-status">--</strong>
+              </div>
+            </div>
+
+            <div class="confirmation-actions">
+              <button type="button" class="button button-large" id="confirm-submit-btn">
+                <span data-i18n="confirmSend">Confirmar y recibir recursos por correo</span> <span>→</span>
+              </button>
+              <button type="button" class="button button-outline" id="confirm-edit-btn">
+                <span>✏️</span> <span data-i18n="confirmEdit">Corregir datos</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Paso 3: Confirmación de envío y Mensaje de Bienvenida -->
+          <div class="resources-unlocked" id="lead-success-step" style="display: none;">
             <div class="unlocked-message">
-              <p class="success-badge">✅ <span data-i18n="formSuccessTitle">¡Acceso concedido!</span></p>
-              <p><span data-i18n="formSuccessText">Gracias por registrarte. Ya podés descargar todos los recursos gratuitos a continuación:</span></p>
+              <p class="success-badge">✉️ <span data-i18n="emailSentTitle">¡Recursos enviados a tu correo!</span></p>
+              <p><span data-i18n="emailSentText">Hemos enviado la guía, la checklist y la planilla de finanzas a</span> <strong id="success-user-email">tu correo</strong>.</p>
             </div>
-            <div class="resource-grid">
-              <article class="resource-card">
-                <p class="resource-type" data-i18n="resource1Type">Guía práctica · PDF</p>
-                <h3 data-i18n="resource1Title">Ebook: Dos Cajas, Un Negocio</h3>
-                <p data-i18n="resource1Text">La guía definitiva para separar tus finanzas personales de las de tu negocio y finalmente entender tus impuestos.</p>
-                <a class="button resource-button" href="Ebook%20de%20Educacion%20Financiera.pdf" download><span data-i18n="downloadEbook">Descargar ebook</span> <span>→</span></a>
-              </article>
-              <article class="resource-card">
-                <p class="resource-type" data-i18n="resource2Type">Para empezar · PDF</p>
-                <h3 data-i18n="resource2Title">Checklist: 7 Acciones para Empezar Esta Semana</h3>
-                <p data-i18n="resource2Text">Acciones concretas para ordenar tus finanzas esta misma semana.</p>
-                <a class="button resource-button" href="Checklist%20Final.pdf" download><span data-i18n="downloadChecklist">Descargar checklist</span> <span>→</span></a>
-              </article>
-              <article class="resource-card">
-                <p class="resource-type" data-i18n="resource3Type">Herramienta editable · Excel</p>
-                <h3 data-i18n="resource3Title">Planilla de Finanzas</h3>
-                <p data-i18n="resource3Text">Planilla lista para usar: ingresos, gastos, impuestos y resumen mensual.</p>
-                <a class="button resource-button" href="Planilla%20de%20Finanzas.xlsx" download><span data-i18n="downloadSpreadsheet">Descargar planilla</span> <span>→</span></a>
-              </article>
+
+            <div class="welcome-email-preview">
+              <div class="email-preview-header">
+                <span class="email-preview-tag" data-i18n="emailPreviewTag">Mensaje de bienvenida</span>
+                <span class="email-from">De: mmancuello@finanfoco.com</span>
+              </div>
+              <div class="email-preview-body">
+                <h4><span data-i18n="welcomeGreeting">¡Hola</span> <span id="welcome-user-name">Emprendedor/a</span><span data-i18n="welcomeSubGreeting">! Te damos la bienvenida.</span></h4>
+                <p data-i18n="emailWelcomeP1">En tu casilla encontrás adjuntos los enlaces directos para descargar:</p>
+                <ul class="email-resources-list">
+                  <li>📄 <strong>Ebook: Dos Cajas, Un Negocio</strong> (PDF)</li>
+                  <li>📋 <strong>Checklist: 7 Acciones para Empezar esta Semana</strong> (PDF)</li>
+                  <li>📊 <strong>Planilla de Finanzas</strong> (Excel editable)</li>
+                </ul>
+                <blockquote class="email-quote" data-i18n="emailWelcomeQuote">
+                  “Mi objetivo es que sientas calma y claridad al tomar decisiones financieras en tu negocio.”
+                </blockquote>
+                <p data-i18n="emailWelcomeP2">Revisá tu bandeja de entrada (y la carpeta de Spam o Promociones por las dudas). Si tenés cualquier consulta sobre tus números o querés agendar una llamada sin compromiso, podés responder directamente a ese correo o escribirnos.</p>
+                <p class="email-signature">
+                  <strong>Marisa Mancuello</strong><br />
+                  <span data-i18n="footerRole">Contadora Pública | Especialista en Finanzas</span>
+                </p>
+              </div>
             </div>
+
             <div class="reset-lead-wrap">
-              <button type="button" class="text-link" id="lead-reset-btn" data-i18n="formReset">¿Registrar otro correo o modificar datos?</button>
+              <button type="button" class="button button-outline" id="lead-reset-btn">
+                <span>✏️</span> <span data-i18n="formReset">Modificar datos o registrar otro correo</span>
+              </button>
             </div>
           </div>
         </div>
