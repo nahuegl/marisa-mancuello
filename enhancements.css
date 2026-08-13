@@ -1,4 +1,176 @@
 /* Ajustes puntuales: trayectoria profesional, comunidad WhatsApp, accesibilidad y bilingüe. */
+
+/* —— Hero: legible al 100% de zoom, sin CTAs —— */
+.hero {
+  height: auto;
+  min-height: min(640px, calc(100vh - 84px));
+  max-height: none;
+  display: flex;
+  align-items: center;
+}
+
+.hero-inner {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 0;
+  height: auto;
+  padding: clamp(48px, 7vh, 80px) clamp(24px, 5vw, 72px);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: clamp(28px, 4vw, 56px);
+  align-items: center;
+}
+
+.hero-copy {
+  max-width: 620px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4.2vw, 3.35rem);
+  line-height: 1.12;
+  margin-bottom: 18px;
+}
+
+.hero-description {
+  font-size: clamp(15px, 1.15vw, 17px);
+  margin-bottom: 0;
+  max-width: 34em;
+}
+
+.hero-portrait {
+  width: min(300px, 100%);
+  height: auto;
+  aspect-ratio: 3 / 4;
+  max-height: 400px;
+  justify-self: end;
+}
+
+.hero-portrait img {
+  height: 100%;
+  width: 100%;
+}
+
+/* —— Espaciado de secciones —— */
+.section {
+  padding: clamp(72px, 10vw, 110px) max(24px, 7vw);
+}
+
+.section-intro {
+  margin-bottom: clamp(32px, 4vw, 48px);
+}
+
+.value-bar {
+  min-height: 64px;
+  padding: 16px max(20px, 4vw);
+  gap: 18px;
+}
+
+.about {
+  gap: clamp(36px, 6vw, 96px);
+}
+
+.about-story p {
+  margin-bottom: 1.05em;
+}
+
+.about-story .about-lead {
+  margin-bottom: 1.25em;
+}
+
+.about-story blockquote {
+  margin: 1.6em 0;
+}
+
+.about-story .about-closing {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.about-actions {
+  margin-top: 28px;
+}
+
+.about-story strong {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.services .section-intro {
+  margin-bottom: clamp(28px, 3.5vw, 44px);
+}
+
+.contact {
+  padding-bottom: clamp(72px, 10vw, 112px);
+}
+
+/* —— Móvil: hero y secciones —— */
+@media (max-width: 900px) {
+  .hero {
+    min-height: 0;
+  }
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding: 48px 28px 40px;
+    gap: 28px;
+  }
+  .hero-portrait {
+    width: min(240px, 72%);
+    max-height: 320px;
+    justify-self: end;
+  }
+  .hero h1 {
+    font-size: clamp(1.85rem, 6vw, 2.4rem);
+  }
+}
+
+@media (max-width: 680px) {
+  .hero {
+    margin-top: 70px;
+    min-height: 0;
+  }
+  .hero-inner {
+    padding: 36px 20px 32px;
+    gap: 24px;
+  }
+  .hero-portrait {
+    width: min(200px, 68%);
+    max-height: 260px;
+    margin: 8px 0 0 auto;
+  }
+  .hero h1 {
+    font-size: 1.75rem;
+    margin-bottom: 14px;
+  }
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .section {
+    padding: 64px 20px;
+  }
+  .value-bar {
+    justify-content: flex-start;
+    padding: 14px 16px;
+    gap: 12px;
+    font-size: 12px;
+  }
+  .about {
+    gap: 36px;
+  }
+  .about-image {
+    height: 380px;
+  }
+  .service-card {
+    min-height: 0;
+    padding: 24px 20px;
+  }
+  .contact {
+    padding-bottom: 72px;
+  }
+  .site-footer {
+    padding: 28px 20px;
+  }
+}
+
 .header-actions { display: flex; align-items: center; gap: 10px; }
 .language-toggle { min-width: 38px; padding: 8px 10px; border: 1px solid var(--border); border-radius: 99px; background: transparent; color: var(--teal); font: 600 12px var(--sans); letter-spacing: .08em; cursor: pointer; transition: border-color .2s, color .2s, background .2s; }
 .language-toggle:hover { border-color: var(--coral); background: var(--cream); color: var(--coral); }
@@ -16,21 +188,6 @@
   font: 400 23px/1.4 var(--serif);
 }
 
-.about .about-subtitle {
-  margin: 31px 0 10px;
-  color: var(--gold);
-  font: 600 11px/1.4 var(--sans);
-  letter-spacing: .12em;
-  text-transform: uppercase;
-}
-
-.about .credentials-list {
-  margin: 0 0 18px;
-  padding-left: 18px;
-  font-size: 15px;
-}
-
-.about .credentials-list li { margin-bottom: 5px; padding-left: 3px; }
 .about .about-closing { color: var(--teal); font-weight: 600; }
 
 .button-outline {
@@ -406,7 +563,7 @@
   .footer-links { align-items: flex-start; }
 }
 
-/* Focus & accessibility (Web Interface Guidelines) */
+/* Focus & accessibility */
 :focus-visible {
   outline: 2px solid var(--coral);
   outline-offset: 3px;
