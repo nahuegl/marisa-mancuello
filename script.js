@@ -11,7 +11,6 @@
       heroEyebrow: "Contadora Pública (UBA) · Especialista en Finanzas",
       heroTitle: "Entendé tus números.<br />Tomá mejores decisiones.<br /><em>Hacé crecer tu negocio.</em>",
       heroDescription: "Acompañamos tus finanzas y la gestión contable-impositiva para que puedas decidir con más claridad, más calma y una estrategia que se sostenga en el tiempo.",
-      credential: "Matrícula CPCE CABA · Tomo 463 · Folio 69",
       viewServices: "Conocé mis servicios",
       value1: "Estrategia clara, sin jerga",
       value2: "Acompañamiento cercano",
@@ -20,16 +19,12 @@
       aboutEyebrow: "Sobre mí",
       aboutTitle: "Hola, soy Marisa.",
       aboutLead: "Contadora Pública, consultora y compañera de camino de quienes quieren tomar decisiones financieras con más calma y menos peso encima.",
-      aboutP1: "No siempre fue fácil. Aprendí —en la facultad, en estudios contables y en empresas reales— que los números pueden ordenar una vida… o volverse una fuente constante de ansiedad cuando nadie los traduce a algo humano. Vi a emprendedoras y emprendedores cargar culpas que no les correspondían, postergar decisiones importantes y sentir que “no sabían de plata”, cuando en realidad nadie les había ofrecido un mapa claro.",
-      aboutP2: "Esa experiencia me cambió el oficio. Dejé de pensar solo en cumplir y empecé a construir otra forma de acompañar: números correctos, sí, pero también útiles, cercanos y posibles de sostener en el día a día. Hoy trabajo para que la información financiera devuelva energía en lugar de quitarla.",
+      aboutP1: "No siempre fue fácil. Aprendí —en la facultad, en estudios contables y en empresas reales— que los números pueden <strong>ordenar una vida</strong>… o volverse una fuente constante de ansiedad cuando nadie los traduce a algo humano.",
+      aboutP2: "Vi a emprendedoras y emprendedores cargar culpas que no les correspondían, postergar decisiones importantes y sentir que “no sabían de plata”, cuando en realidad nadie les había ofrecido un mapa claro. Esa experiencia me cambió el oficio.",
+      aboutP3: "Dejé de pensar solo en cumplir y empecé a construir otra forma de acompañar: números correctos, sí, pero también <strong>útiles, cercanos y posibles de sostener</strong> en el día a día. Hoy trabajo para que la información financiera devuelva energía en lugar de quitarla.",
       quote: "“La claridad financiera no debería quitarte energía: debería devolvértela.”",
-      aboutP3: "Acompaño procesos de orden y crecimiento con mirada estratégica, cuidando siempre que los números tengan sentido dentro de la vida real de cada negocio —con especial atención a emprendimientos y a los ritmos propios del turismo.",
-      credentialsTitle: "Formación y credenciales",
-      cred1: "Contadora Pública — Universidad de Buenos Aires (UBA)",
-      cred2: "Matrícula: Tomo 463 – Folio 69",
-      cred3: "Especialización en Finanzas",
-      approachTitle: "Mi forma de acompañar",
-      approach: "Simplicidad con rigor. Lo importante, explicado con claridad y cercanía.",
+      aboutP4: "Acompaño procesos de orden y crecimiento con mirada estratégica, cuidando siempre que los números tengan sentido dentro de la vida real de cada negocio —con especial atención a emprendimientos y a los ritmos propios del turismo.",
+      aboutP5: "Si estás buscando alguien que te explique sin jerga, te ordene sin juicio y te acompañe con cercanía profesional, este puede ser un buen lugar para empezar.",
       viewTrajectory: "Conocé mi trayectoria profesional completa",
       imageNote: "Finanzas con foco humano",
       servicesEyebrow: "Servicios",
@@ -98,7 +93,6 @@
       heroEyebrow: "Public Accountant (UBA) · Finance Specialist",
       heroTitle: "Understand your numbers.<br />Make better decisions.<br /><em>Grow your business.</em>",
       heroDescription: "We support your finances and tax-accounting management so you can decide with more clarity, more calm, and a strategy that lasts over time.",
-      credential: "License CPCE CABA · Volume 463 · Folio 69",
       viewServices: "See my services",
       value1: "Clear strategy, no jargon",
       value2: "Close accompaniment",
@@ -107,16 +101,12 @@
       aboutEyebrow: "About me",
       aboutTitle: "Hi, I'm Marisa.",
       aboutLead: "Public Accountant, consultant and walking companion for people who want to make financial decisions with more calm and less weight on their shoulders.",
-      aboutP1: "It wasn't always easy. I learned —at university, in accounting firms and in real companies— that numbers can organize a life… or become a constant source of anxiety when nobody translates them into something human. I saw entrepreneurs carry guilt that wasn't theirs, postpone important decisions and feel they “weren't good with money”, when in reality nobody had offered them a clear map.",
-      aboutP2: "That experience changed how I practice. I stopped thinking only about compliance and started building another way of supporting people: correct numbers, yes, but also useful, close and sustainable day to day. Today I work so that financial information gives energy back instead of taking it away.",
+      aboutP1: "It wasn't always easy. I learned —at university, in accounting firms and in real companies— that numbers can <strong>organize a life</strong>… or become a constant source of anxiety when nobody translates them into something human.",
+      aboutP2: "I saw entrepreneurs carry guilt that wasn't theirs, postpone important decisions and feel they “weren't good with money”, when in reality nobody had offered them a clear map. That experience changed how I practice.",
+      aboutP3: "I stopped thinking only about compliance and started building another way of supporting people: correct numbers, yes, but also <strong>useful, close and sustainable</strong> day to day. Today I work so that financial information gives energy back instead of taking it away.",
       quote: "“Financial clarity shouldn't drain your energy — it should give it back.”",
-      aboutP3: "I support order and growth processes with a strategic eye, always making sure the numbers make sense in the real life of each business —with special attention to entrepreneurs and the rhythms of tourism.",
-      credentialsTitle: "Education & credentials",
-      cred1: "Public Accountant — University of Buenos Aires (UBA)",
-      cred2: "License: Volume 463 – Folio 69",
-      cred3: "Specialization in Finance",
-      approachTitle: "How I work with you",
-      approach: "Simplicity with rigor. What matters, explained with clarity and closeness.",
+      aboutP4: "I support order and growth processes with a strategic eye, always making sure the numbers make sense in the real life of each business —with special attention to entrepreneurs and the rhythms of tourism.",
+      aboutP5: "If you're looking for someone who explains without jargon, brings order without judgment and supports you with professional closeness, this may be a good place to start.",
       viewTrajectory: "See my full professional background",
       imageNote: "Finance with a human focus",
       servicesEyebrow: "Services",
@@ -186,22 +176,18 @@
     currentLang = lang;
     localStorage.setItem(storageKey, lang);
     document.documentElement.lang = lang === "en" ? "en" : "es-AR";
-
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       if (dict[key] != null) el.textContent = dict[key];
     });
-
     document.querySelectorAll("[data-i18n-html]").forEach((el) => {
       const key = el.getAttribute("data-i18n-html");
       if (dict[key] != null) el.innerHTML = dict[key];
     });
-
     document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
       const key = el.getAttribute("data-i18n-aria");
       if (dict[key] != null) el.setAttribute("aria-label", dict[key]);
     });
-
     const toggle = document.querySelector(".language-toggle");
     if (toggle) {
       toggle.textContent = lang === "es" ? "EN" : "ES";
