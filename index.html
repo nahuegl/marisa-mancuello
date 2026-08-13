@@ -86,113 +86,26 @@
       <section class="resources section" id="recursos" aria-labelledby="resources-title">
         <div class="section-intro">
           <p class="eyebrow" data-i18n="resourcesEyebrow">Recursos gratuitos</p>
-          <h2 id="resources-title" data-i18n="resourcesTitle">Accedé a nuestros recursos y novedades</h2>
-          <p data-i18n="resourcesDescription">Completá tus datos para recibir la guía, checklist y planilla de finanzas directamente en tu correo electrónico.</p>
+          <h2 id="resources-title" data-i18n="resourcesTitle">Sumate a la comunidad</h2>
+          <p data-i18n="resourcesDescription">En el grupo de WhatsApp comparto recursos útiles de finanzas personales y las novedades que voy publicando. Un espacio cercano para acompañarte.</p>
         </div>
 
-        <div class="resources-lead-container">
-          <!-- Paso 1: Formulario de Registro -->
-          <form class="lead-form" id="lead-capture-form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="lead-name" data-i18n="formName">Nombre *</label>
-                <input type="text" id="lead-name" name="name" required placeholder="Tu nombre" autocomplete="given-name" />
-              </div>
-              <div class="form-group">
-                <label for="lead-lastname" data-i18n="formLastName">Apellido *</label>
-                <input type="text" id="lead-lastname" name="lastname" required placeholder="Tu apellido" autocomplete="family-name" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="lead-email" data-i18n="formEmail">Correo electrónico *</label>
-              <input type="email" id="lead-email" name="email" required placeholder="tuemail@ejemplo.com" autocomplete="email" />
-            </div>
-            <!-- Honeypot anti-spam (hidden from users) -->
-            <div class="hp-field" aria-hidden="true">
-              <label for="lead-company">Company</label>
-              <input type="text" id="lead-company" name="company" tabindex="-1" autocomplete="off" />
-            </div>
-            <div class="form-group checkbox-group">
-              <label class="custom-checkbox">
-                <input type="checkbox" id="lead-subscribe" name="subscribe" checked />
-                <span data-i18n="formSubscribeText">Quiero suscribirme a novedades, consejos financieros y futuras charlas de Marisa Mancuello.</span>
-              </label>
-            </div>
-            <div class="form-actions">
-              <button type="submit" class="button button-large lead-submit-btn">
-                <span data-i18n="formContinue">Continuar y verificar datos</span> <span>→</span>
-              </button>
-            </div>
-          </form>
-
-          <!-- Paso 2: Verificación previa al envío -->
-          <div class="lead-confirmation-card" id="lead-confirmation-step" style="display: none;">
-            <h3 data-i18n="confirmTitle">Confirmá tus datos antes de enviar</h3>
-            <p class="confirmSub" data-i18n="confirmSub">Enviaremos los 3 recursos gratuitos (Ebook, Checklist y Planilla) a la siguiente casilla:</p>
-            
-            <div class="summary-box">
-              <div class="summary-item">
-                <span class="summary-label" data-i18n="summaryName">Nombre y Apellido:</span>
-                <strong id="confirm-full-name">--</strong>
-              </div>
-              <div class="summary-item">
-                <span class="summary-label" data-i18n="summaryEmail">Correo electrónico:</span>
-                <strong id="confirm-email-addr">--</strong>
-              </div>
-              <div class="summary-item">
-                <span class="summary-label" data-i18n="summarySub">Suscripción a novedades:</span>
-                <strong id="confirm-sub-status">--</strong>
-              </div>
-            </div>
-
-            <div class="confirmation-actions">
-              <button type="button" class="button button-large" id="confirm-submit-btn">
-                <span data-i18n="confirmSend">Confirmar y recibir recursos por correo</span> <span>→</span>
-              </button>
-              <button type="button" class="button button-outline" id="confirm-edit-btn">
-                <span>✏️</span> <span data-i18n="confirmEdit">Corregir datos</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Paso 3: Confirmación de envío y Mensaje de Bienvenida -->
-          <div class="resources-unlocked" id="lead-success-step" style="display: none;">
-            <div class="unlocked-message">
-              <p class="success-badge">✉️ <span data-i18n="emailSentTitle">¡Recursos enviados a tu correo!</span></p>
-              <p><span data-i18n="emailSentText">Hemos enviado la guía, la checklist y la planilla de finanzas a</span> <strong id="success-user-email">tu correo</strong>.</p>
-              <p class="success-notice" data-i18n="emailSentNotice">Revisá también la carpeta de Spam o Promociones. Si no llega en unos minutos, escribime a mmancuello@finanfoco.com.</p>
-            </div>
-
-            <div class="welcome-email-preview">
-              <div class="email-preview-header">
-                <span class="email-preview-tag" data-i18n="emailPreviewTag">Mensaje de bienvenida</span>
-                <span class="email-from">De: mmancuello@finanfoco.com</span>
-              </div>
-              <div class="email-preview-body">
-                <h4><span data-i18n="welcomeGreeting">¡Hola</span> <span id="welcome-user-name">Emprendedor/a</span><span data-i18n="welcomeSubGreeting">! Te damos la bienvenida.</span></h4>
-                <p data-i18n="emailWelcomeP1">En tu casilla encontrás adjuntos los enlaces directos para descargar:</p>
-                <ul class="email-resources-list">
-                  <li>📄 <strong>Ebook: Dos Cajas, Un Negocio</strong> (PDF)</li>
-                  <li>📋 <strong>Checklist: 7 Acciones para Empezar esta Semana</strong> (PDF)</li>
-                  <li>📊 <strong>Planilla de Finanzas</strong> (Excel editable)</li>
-                </ul>
-                <blockquote class="email-quote" data-i18n="emailWelcomeQuote">
-                  “Mi objetivo es que sientas calma y claridad al tomar decisiones financieras en tu negocio.”
-                </blockquote>
-                <p data-i18n="emailWelcomeP2">Revisá tu bandeja de entrada (y la carpeta de Spam o Promociones por las dudas). Si tenés cualquier consulta sobre tus números o querés agendar una llamada sin compromiso, podés responder directamente a ese correo o escribirnos.</p>
-                <p class="email-signature">
-                  <strong>Marisa Mancuello</strong><br />
-                  <span data-i18n="footerRole">Contadora Pública | Especialista en Finanzas</span>
-                </p>
-              </div>
-            </div>
-
-            <div class="reset-lead-wrap">
-              <button type="button" class="button button-outline" id="lead-reset-btn">
-                <span>✏️</span> <span data-i18n="formReset">Modificar datos o registrar otro correo</span>
-              </button>
-            </div>
-          </div>
+        <div class="resources-cta-wrap">
+          <a
+            class="button button-large whatsapp-cta"
+            href="https://chat.whatsapp.com/G0GoP51IZWuJAmMIJXmsBA"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n-aria="whatsappAria"
+            aria-label="Unirme al grupo de WhatsApp de Marisa Mancuello"
+          >
+            <svg class="whatsapp-icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span data-i18n="whatsappCta">Unirme al grupo de WhatsApp</span>
+            <span aria-hidden="true">→</span>
+          </a>
+          <p class="resources-note" data-i18n="resourcesNote">Solo recursos y novedades. Sin spam.</p>
         </div>
       </section>
 
