@@ -23,172 +23,153 @@
       </nav>
       <div class="header-actions">
         <button class="language-toggle" type="button" aria-label="Switch to English">EN</button>
-        <a class="button button-small" href="index.html#sobre-mi">
-          <span>← Volver al sitio</span>
+        <a class="button button-small header-cta" href="index.html#sobre-mi">
+          <span data-i18n="backToSite">← Volver al sitio</span>
         </a>
       </div>
     </header>
 
     <main class="trajectory-page">
-      <!-- Banner / Header de la Trayectoria -->
-      <section class="trajectory-hero section">
+      <section class="trajectory-hero">
         <div class="trajectory-hero-inner">
           <div class="trajectory-hero-copy">
-            <a href="index.html#sobre-mi" class="back-link">← <span data-i18n="backToHome">Volver a Sobre Mí</span></a>
-            <p class="eyebrow" data-i18n="trajEyebrow">Perfil Profesional</p>
+            <a href="index.html#sobre-mi" class="back-link">← <span data-i18n="backToHome">Volver a Sobre mí</span></a>
+            <p class="eyebrow" data-i18n="trajEyebrow">Perfil profesional</p>
             <h1 class="trajectory-title" data-i18n="trajName">Marisa Raquel Mancuello</h1>
             <p class="trajectory-subtitle" data-i18n="trajSub">Contadora Pública (UBA) · Matriculada en CABA — Tomo 463, Folio 69</p>
-            
+
             <div class="contact-tags">
               <span class="tag">📍 Balvanera, CABA, Argentina</span>
               <a href="mailto:mmancuello@finanfoco.com" class="tag">✉️ mmancuello@finanfoco.com</a>
             </div>
 
             <p class="trajectory-bio" data-i18n="trajBio">
-              Contadora Pública con más de 10 años de trayectoria en administración, contabilidad, impuestos y finanzas. Mi diferencial no es solamente ejecutar tareas: me especializo en detectar inconsistencias, optimizar procesos y transformar la información contable en una herramienta estratégica para la toma de decisiones. Aporto enfoque analítico, criterio profesional y una orientación permanente a la mejora continua de los procesos administrativos, impositivos y financieros.
+              Contadora Pública con más de 10 años de trayectoria en administración, contabilidad, impuestos y finanzas. Me especializo en detectar inconsistencias, optimizar procesos y transformar la información contable en una herramienta estratégica para la toma de decisiones.
             </p>
           </div>
           <figure class="trajectory-portrait">
-            <img src="Marisa%20Mancuello%203.jpeg" alt="Marisa Raquel Mancuello" />
+            <img src="Marisa%20Mancuello%203.jpeg" alt="Marisa Raquel Mancuello" width="420" height="520" />
           </figure>
         </div>
       </section>
 
-      <!-- Experiencia Profesional -->
-      <section class="section trajectory-experience">
-        <div class="container">
-          <div class="section-intro">
-            <p class="eyebrow" data-i18n="expEyebrow">Trayectoria Laboral</p>
-            <h2 data-i18n="expTitle">Experiencia Profesional</h2>
-          </div>
+      <section class="section trajectory-experience" aria-labelledby="exp-title">
+        <div class="section-intro">
+          <p class="eyebrow" data-i18n="expEyebrow">Trayectoria laboral</p>
+          <h2 id="exp-title" data-i18n="expTitle">Experiencia profesional</h2>
+        </div>
 
-          <div class="timeline">
-            <!-- Puesto 1 -->
-            <article class="timeline-item">
-              <div class="timeline-badge" data-i18n="job1Dates">ABR 2024 — ACTUALIDAD</div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <h3 data-i18n="job1Title">Analista Sr. Administrativo / Contable</h3>
-                  <span class="company">Newbet SA</span>
-                </div>
-                <p data-i18n="job1Desc">
-                  Al incorporarme, encontré procesos contables enfocados solo en el cumplimiento mensual, con inconsistencias arrastradas de gestiones anteriores. Lideré el área contable y administrativa regularizando las obligaciones pendientes, corrigiendo errores de categorización tributaria y documentando y estandarizando los procedimientos del área, además de elaborar reportes financieros para gerencia.
-                </p>
-                <div class="impact-box">
-                  <strong>💡 <span data-i18n="impactLabel">Impacto:</span></strong>
-                  <span data-i18n="job1Impact">Reducción de riesgos fiscales y fortalecimiento del control interno, con información confiable para la toma de decisiones de dirección.</span>
-                </div>
-                <div class="tools-list">
-                  <span class="tools-label" data-i18n="toolsLabel">Herramientas:</span>
-                  <span class="tool-tag">ARCA</span>
-                  <span class="tool-tag">AGIP</span>
-                  <span class="tool-tag">IATA</span>
-                  <span class="tool-tag">SITI</span>
-                </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-dates" data-i18n="job1Dates">Abr 2024 — Actualidad</span>
+              <span class="company">Newbet SA</span>
+            </div>
+            <div class="timeline-content">
+              <h3 data-i18n="job1Title">Analista Sr. Administrativo / Contable</h3>
+              <p data-i18n="job1Desc">
+                Al incorporarme, encontré procesos contables enfocados solo en el cumplimiento mensual, con inconsistencias arrastradas de gestiones anteriores. Lideré el área contable y administrativa: regularicé obligaciones pendientes, corregí errores de categorización tributaria, documenté y estandaricé procedimientos, y elaboré reportes financieros para gerencia.
+              </p>
+              <p class="impact-line">
+                <span class="impact-label" data-i18n="impactLabel">Impacto</span>
+                <span data-i18n="job1Impact">Menor riesgo fiscal, mejor control interno e información confiable para la dirección.</span>
+              </p>
+              <div class="tools-list" aria-label="Herramientas">
+                <span class="tool-tag">ARCA</span>
+                <span class="tool-tag">AGIP</span>
+                <span class="tool-tag">IATA</span>
+                <span class="tool-tag">SITI</span>
               </div>
-            </article>
+            </div>
+          </article>
 
-            <!-- Puesto 2 -->
-            <article class="timeline-item">
-              <div class="timeline-badge" data-i18n="job2Dates">MAY 2023 — ABR 2024</div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <h3 data-i18n="job2Title">Analista Administrativo / Contable</h3>
-                  <span class="company">Emprendimientos Januca SRL</span>
-                </div>
-                <p data-i18n="job2Desc">
-                  Lideré el área contable, administrativa e impositiva en una empresa importadora de alto volumen. A cargo del circuito de carga, control documental y conciliación de cuentas corrientes de clientes y proveedores locales e internacionales, optimicé la gestión de expedientes para presentaciones regulatorias y coordiné directamente con el estudio externo la provisión de información contable e impositiva para los cierres mensuales y anuales.
-                </p>
-                <div class="impact-box">
-                  <strong>💡 <span data-i18n="impactLabel">Impacto:</span></strong>
-                  <span data-i18n="job2Impact">Reducción de tiempos de procesamiento y mayor confiabilidad de la información para la gestión.</span>
-                </div>
-                <div class="tools-list">
-                  <span class="tools-label" data-i18n="toolsLabel">Herramientas:</span>
-                  <span class="tool-tag">ARCA</span>
-                  <span class="tool-tag">ARBA</span>
-                  <span class="tool-tag">AGIP</span>
-                  <span class="tool-tag">CONVENIO</span>
-                  <span class="tool-tag">BEJERMAN</span>
-                  <span class="tool-tag">XUBIO</span>
-                </div>
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-dates" data-i18n="job2Dates">May 2023 — Abr 2024</span>
+              <span class="company">Emprendimientos Januca SRL</span>
+            </div>
+            <div class="timeline-content">
+              <h3 data-i18n="job2Title">Analista Administrativo / Contable</h3>
+              <p data-i18n="job2Desc">
+                Lideré el área contable, administrativa e impositiva en una empresa importadora de alto volumen. Estuve a cargo del circuito de carga, control documental y conciliación de cuentas corrientes de clientes y proveedores locales e internacionales; optimicé expedientes regulatorios y coordiné con el estudio externo la información para cierres mensuales y anuales.
+              </p>
+              <p class="impact-line">
+                <span class="impact-label" data-i18n="impactLabel">Impacto</span>
+                <span data-i18n="job2Impact">Menores tiempos de procesamiento y mayor confiabilidad de la información para la gestión.</span>
+              </p>
+              <div class="tools-list" aria-label="Herramientas">
+                <span class="tool-tag">ARCA</span>
+                <span class="tool-tag">ARBA</span>
+                <span class="tool-tag">AGIP</span>
+                <span class="tool-tag">Bejerman</span>
+                <span class="tool-tag">Xubio</span>
               </div>
-            </article>
+            </div>
+          </article>
 
-            <!-- Puesto 3 -->
-            <article class="timeline-item">
-              <div class="timeline-badge" data-i18n="job3Dates">AGO 2022 — MAY 2023</div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <h3 data-i18n="job3Title">Analista Impositivo / Contable</h3>
-                  <span class="company">BC Consultores</span>
-                </div>
-                <p data-i18n="job3Desc">
-                  Encargada operativa de estudio contable, asumiendo el liderazgo del equipo y la capacitación técnica de los nuevos integrantes. Gestioné de manera integral una cartera diversificada de clientes, ejecutando liquidaciones simultáneas de impuestos, sueldos y cargas sociales bajo estrictos calendarios de vencimiento. A su vez, impulsé la optimización de los circuitos internos de trabajo, logrando procesos más ágiles y eficientes en toda la operatoria del estudio.
-                </p>
-                <div class="impact-box">
-                  <strong>💡 <span data-i18n="impactLabel">Impacto:</span></strong>
-                  <span data-i18n="job3Impact">Mayor eficiencia del equipo y mejor calidad de servicio para cada cliente.</span>
-                </div>
-                <div class="tools-list">
-                  <span class="tools-label" data-i18n="toolsLabel">Herramientas:</span>
-                  <span class="tool-tag">ARCA</span>
-                  <span class="tool-tag">CONVENIO</span>
-                  <span class="tool-tag">AGIP</span>
-                  <span class="tool-tag">ARBA</span>
-                  <span class="tool-tag">HOLISTOR</span>
-                </div>
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-dates" data-i18n="job3Dates">Ago 2022 — May 2023</span>
+              <span class="company">BC Consultores</span>
+            </div>
+            <div class="timeline-content">
+              <h3 data-i18n="job3Title">Analista Impositivo / Contable</h3>
+              <p data-i18n="job3Desc">
+                Encargada operativa del estudio contable: liderazgo del equipo, capacitación técnica de nuevos integrantes y gestión integral de una cartera diversificada de clientes. Ejecuté liquidaciones simultáneas de impuestos, sueldos y cargas sociales bajo calendarios estrictos, e impulsé circuitos internos más ágiles.
+              </p>
+              <p class="impact-line">
+                <span class="impact-label" data-i18n="impactLabel">Impacto</span>
+                <span data-i18n="job3Impact">Mayor eficiencia del equipo y mejor calidad de servicio para cada cliente.</span>
+              </p>
+              <div class="tools-list" aria-label="Herramientas">
+                <span class="tool-tag">ARCA</span>
+                <span class="tool-tag">AGIP</span>
+                <span class="tool-tag">ARBA</span>
+                <span class="tool-tag">Holistor</span>
               </div>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <!-- Formación, Idiomas y Habilidades -->
-      <section class="section skills-section">
-        <div class="container">
-          <div class="section-intro">
-            <p class="eyebrow" data-i18n="skillsEyebrow">Competencias</p>
-            <h2 data-i18n="skillsTitle">Formación, Idiomas y Habilidades</h2>
-          </div>
+      <section class="section skills-section" aria-labelledby="skills-title">
+        <div class="section-intro">
+          <p class="eyebrow" data-i18n="skillsEyebrow">Competencias</p>
+          <h2 id="skills-title" data-i18n="skillsTitle">Formación, idiomas y habilidades</h2>
+        </div>
 
-          <div class="skills-grid">
-            <div class="skills-card">
-              <div class="skills-icon">🎓</div>
-              <h3 data-i18n="eduTitle">Formación Académica</h3>
-              <p><strong>Contadora Pública</strong><br />Universidad de Buenos Aires (UBA)</p>
-              <p class="small-text">Matriculada en CABA — Tomo 463, Folio 69</p>
-            </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3 data-i18n="eduTitle">Formación académica</h3>
+            <p><strong>Contadora Pública</strong><br />Universidad de Buenos Aires (UBA)</p>
+            <p class="skill-note">Matriculada en CABA — Tomo 463, Folio 69</p>
+          </article>
 
-            <div class="skills-card">
-              <div class="skills-icon">🌐</div>
-              <h3 data-i18n="langTitle">Idiomas</h3>
-              <ul>
-                <li><strong>Español:</strong> Nativo</li>
-                <li><strong>Portugués:</strong> Intermedio</li>
-              </ul>
-            </div>
+          <article class="skill-card">
+            <h3 data-i18n="langTitle">Idiomas</h3>
+            <ul>
+              <li><strong data-i18n="langEs">Español:</strong> <span data-i18n="langEsLevel">Nativo</span></li>
+              <li><strong data-i18n="langPt">Portugués:</strong> <span data-i18n="langPtLevel">Intermedio</span></li>
+            </ul>
+          </article>
 
-            <div class="skills-card">
-              <div class="skills-icon">⚡</div>
-              <h3 data-i18n="skillsListTitle">Áreas de Especialidad</h3>
-              <ul>
-                <li><strong>Gestión Financiera:</strong> Cierres contables, conciliaciones, análisis financiero.</li>
-                <li><strong>Impuestos:</strong> IVA, Ingresos Brutos, Monotributo.</li>
-                <li><strong>Auditoría:</strong> Interna, externa, control de riesgos.</li>
-              </ul>
-            </div>
-          </div>
+          <article class="skill-card">
+            <h3 data-i18n="skillsListTitle">Áreas de especialidad</h3>
+            <ul>
+              <li data-i18n="skill1"><strong>Gestión financiera:</strong> cierres, conciliaciones, análisis.</li>
+              <li data-i18n="skill2"><strong>Impuestos:</strong> IVA, Ingresos Brutos, Monotributo.</li>
+              <li data-i18n="skill3"><strong>Control:</strong> auditoría interna, riesgos, procesos.</li>
+            </ul>
+          </article>
+        </div>
 
-          <!-- Botón de regreso principal -->
-          <div class="back-cta-wrap">
-            <a class="button button-large" href="index.html#sobre-mi">
-              <span>← Volver al sitio principal</span>
-            </a>
-            <a class="button button-large button-outline" href="https://calendar.app.google/3SxHJpvwusaNwFfG9" target="_blank" rel="noopener noreferrer">
-              <span data-i18n="book">Agendá tu asesoría</span> <span>→</span>
-            </a>
-          </div>
+        <div class="trajectory-cta-actions">
+          <a class="button button-outline" href="index.html#sobre-mi">
+            <span data-i18n="backToSite">← Volver al sitio</span>
+          </a>
+          <a class="button" href="https://calendar.app.google/3SxHJpvwusaNwFfG9" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="book">Agendá tu asesoría</span> <span aria-hidden="true">→</span>
+          </a>
         </div>
       </section>
     </main>
@@ -198,9 +179,20 @@
         <strong>Marisa Mancuello</strong>
         <span data-i18n="footerRole">Contadora Pública | Especialista en Finanzas</span>
       </div>
-      <div>
+      <div class="footer-links">
         <span data-i18n="footerCredential">Matrícula Tomo 463 · Folio 69</span>
         <a href="mailto:mmancuello@finanfoco.com">mmancuello@finanfoco.com</a>
+        <a
+          class="social-link"
+          href="https://www.linkedin.com/in/marisa-mancuello-6b7700197/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn de Marisa Mancuello"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
       </div>
       <p data-i18n="footerText">Finanzas claras para emprendedores y empresas que quieren crecer con orden.</p>
     </footer>
